@@ -1,9 +1,12 @@
 {
     "name": "wrapper-ts",
+    "displayName": "Wrapper-TS",
     "version": "0.0.1",
     "description": "Wrap TypeScript snippets in blocks",
+    "categories": ["Snippets", "Other"],
     "scripts": {
-        "build": "tsc -p ./"
+        "build": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
     },
     "main": "./out/extension.js",
     "engines": {
@@ -14,6 +17,30 @@
             {
                 "command": "wrapperTSSelection.tryCatch",
                 "title": "Wrapper-TS: Wrap Selection in Try Catch"
+            },
+            {
+                "command": "wrapperTSSelection.ifElse",
+                "title": "Wrapper-TS: Wrap Selection in If Else"
+            },
+            {
+                "command": "wrapperTSSelection.ifElseIf",
+                "title": "Wrapper-TS: Wrap Selection in If Else If"
+            },
+            {
+                "command": "wrapperTSSelection.switchCase",
+                "title": "Wrapper-TS: Wrap Selection in Switch Case"
+            },
+            {
+                "command": "wrapperTSSelection.forLoop",
+                "title": "Wrapper-TS: Wrap Selection in For Loop"
+            },
+            {
+                "command": "wrapperTSSelection.whileLoop",
+                "title": "Wrapper-TS: Wrap Selection in While Loop"
+            },
+            {
+                "command": "wrapperTSSelection.doWhileLoop",
+                "title": "Wrapper-TS: Wrap Selection in Do While Loop"
             }
         ]
     },
