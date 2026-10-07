@@ -1,12 +1,21 @@
 {
     "name": "wrapper-ts",
     "displayName": "Wrapper-TS",
+    "license": "MIT",
+    "publisher": "",
     "version": "0.0.1",
     "description": "Wrap TypeScript snippets in blocks",
     "categories": ["Snippets", "Other"],
+    "keywords": ["typescript", "wrap", "javascript", "blocks", "snippets"],
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Der-Feb/wrapper-ts"
+    },
     "scripts": {
         "build": "tsc -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "vscode:prepublish": "npm run build"
     },
     "main": "./out/extension.js",
     "engines": {
