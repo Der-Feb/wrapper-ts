@@ -1,0 +1,25 @@
+{
+    "name": "wrapper-ts",
+    "version": "0.0.1",
+    "description": "Wrap TypeScript snippets in blocks",
+    "scripts": {
+        "compile": "tsc -p ./"
+    },
+    "main": "./out/extension.js",
+    "engines": {
+        "vscode": "^1.107.0"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "command": "wrapperTSSelection.tryCatch",
+                "title": "Wrapper-TS: Wrap Selection in Try Catch"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.107.0",
+        "@types/node": "16.x",
+        "typeScript": "^4.9.4"
+    }
+}
