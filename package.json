@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Wrap TypeScript snippets in blocks",
     "scripts": {
-        "compile": "tsc -p ./"
+        "build": "tsc -p ./"
     },
     "main": "./out/extension.js",
     "engines": {

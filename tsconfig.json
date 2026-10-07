@@ -3,9 +3,10 @@
         "module": "commonjs",
         "target": "es2020",
         "outDir": "out",
-        "lib": ["ES2020"],
-        "sourceMap": true,
         "rootDir": "src",
+        "lib": ["ES2020"],
+        "types": ["node"],
+        "sourceMap": true,
         "strict": true
     },
     "exclude": [
