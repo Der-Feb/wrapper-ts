@@ -1,61 +1,72 @@
 {
-    "name": "wrapper-ts",
-    "displayName": "Wrapper-TS",
-    "license": "MIT",
-    "publisher": "",
-    "version": "0.0.1",
-    "description": "Wrap TypeScript snippets in blocks",
-    "categories": ["Snippets", "Other"],
-    "keywords": ["typescript", "wrap", "javascript", "blocks", "snippets"],
-    "icon": "icon.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Der-Feb/wrapper-ts"
-    },
-    "scripts": {
-        "build": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "vscode:prepublish": "npm run build"
-    },
-    "main": "./out/extension.js",
-    "engines": {
-        "vscode": "^1.107.0"
-    },
-    "contributes": {
-        "commands": [
-            {
-                "command": "wrapperTSSelection.tryCatch",
-                "title": "Wrapper-TS: Wrap Selection in Try Catch"
-            },
-            {
-                "command": "wrapperTSSelection.ifElse",
-                "title": "Wrapper-TS: Wrap Selection in If Else"
-            },
-            {
-                "command": "wrapperTSSelection.ifElseIf",
-                "title": "Wrapper-TS: Wrap Selection in If Else If"
-            },
-            {
-                "command": "wrapperTSSelection.switchCase",
-                "title": "Wrapper-TS: Wrap Selection in Switch Case"
-            },
-            {
-                "command": "wrapperTSSelection.forLoop",
-                "title": "Wrapper-TS: Wrap Selection in For Loop"
-            },
-            {
-                "command": "wrapperTSSelection.whileLoop",
-                "title": "Wrapper-TS: Wrap Selection in While Loop"
-            },
-            {
-                "command": "wrapperTSSelection.doWhileLoop",
-                "title": "Wrapper-TS: Wrap Selection in Do While Loop"
-            }
-        ]
-    },
-    "devDependencies": {
-        "@types/vscode": "^1.107.0",
-        "@types/node": "16.x",
-        "typescript": "^4.9.4"
-    }
+  "name": "wrapper-ts",
+  "displayName": "Wrapper-TS",
+  "license": "MIT",
+  "publisher": "der-feb",
+  "version": "0.0.1",
+  "description": "Wrap TypeScript snippets in blocks",
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "typescript",
+    "wrap",
+    "javascript",
+    "blocks",
+    "snippets"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Der-Feb/wrapper-ts"
+  },
+  "scripts": {
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run build"
+  },
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "wrapperTSSelection.tryCatch",
+        "title": "Wrapper-TS: Wrap Selection in Try Catch"
+      },
+      {
+        "command": "wrapperTSSelection.ifElse",
+        "title": "Wrapper-TS: Wrap Selection in If Else"
+      },
+      {
+        "command": "wrapperTSSelection.ifElseIf",
+        "title": "Wrapper-TS: Wrap Selection in If Else If"
+      },
+      {
+        "command": "wrapperTSSelection.switchCase",
+        "title": "Wrapper-TS: Wrap Selection in Switch Case"
+      },
+      {
+        "command": "wrapperTSSelection.forLoop",
+        "title": "Wrapper-TS: Wrap Selection in For Loop"
+      },
+      {
+        "command": "wrapperTSSelection.whileLoop",
+        "title": "Wrapper-TS: Wrap Selection in While Loop"
+      },
+      {
+        "command": "wrapperTSSelection.doWhileLoop",
+        "title": "Wrapper-TS: Wrap Selection in Do While Loop"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.107.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
+    "typescript": "^4.9.4"
+  }
 }
