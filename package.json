@@ -2,7 +2,7 @@
     "name": "wrapper-ts",
     "displayName": "Wrapper-TS",
     "license": "MIT",
-    "publisher": "",
+    "publisher": "der-feb",
     "version": "0.0.1",
     "description": "Wrap TypeScript snippets in blocks",
     "categories": ["Snippets", "Other"],
